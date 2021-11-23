@@ -106,7 +106,7 @@ namespace ClientProject
             
             prs.RemoveRange(0, prs.Count);
             var gg = ComputerInfo.GetInstProgLst();
-            gg.RemoveRange(4, gg.Count - 4);
+            //gg.RemoveRange(4, gg.Count - 4);
             prs.AddRange(gg);
 
             ResetDataTable(prs);
@@ -140,7 +140,7 @@ namespace ClientProject
                 switch(ans)
                 {
                     case 0: MessageBox.Show("Ошибка на стороне сервера"); break;
-                    case 1: MessageBox.Show("Компьютер бы добавлен в БД"); break;
+                    case 1: MessageBox.Show("Компьютер был добавлен в БД"); break;
                     case 2: MessageBox.Show("Данные про этот компьютер были обновлены в БД"); break;
                 }
             }
